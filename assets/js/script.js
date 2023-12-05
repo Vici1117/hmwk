@@ -3,6 +3,7 @@ $( document ).ready(function() {
                 $("#about_scroll").fadeOut();   
                 $("#work_scroll").fadeOut();
                 $("#contact_scroll").fadeOut();
+                $("#pict_scroll").fadeOut();
 
                 $("#about").click(function(){
                     $("#index").fadeOut();
@@ -21,6 +22,12 @@ $( document ).ready(function() {
                     $("#contact_scroll").fadeIn();
                     $('#contact_left').addClass('animated slideInLeft');
                     $('#contact_right').addClass('animated slideInRight');
+                    });
+                $("#pict").click(function(){
+                    $("#index").fadeOut();
+                    $("#pict_scroll").fadeIn();
+                    $('#pict_left').addClass('animated slideInLeft');
+                    $('#pict_right').addClass('animated slideInRight');
                     });
                 
                 $(".back").click(function(){
